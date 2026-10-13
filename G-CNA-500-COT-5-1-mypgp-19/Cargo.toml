@@ -1,0 +1,21 @@
+[package]
+name = "my_pgp"
+version = "1.0.0"
+edition = "2021"
+authors = ["Karyl <karyl.soumaila@epitech.eu>", "Frédrich <fredo.sokpin@epitech.eu>"]
+description = "XOR, AES, RSA and PGP-like cryptosystems implemented from scratch"
+
+[dependencies]
+
+[[bin]]
+name = "my_pgp"
+path = "src/main.rs"
+
+[lib]
+name = "my_pgp_lib"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
